@@ -1,0 +1,44 @@
+.header { 
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 40px;
+    .name{
+        width: 20%;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+        font-size: 45px;
+        margin: 0;
+        width: 200px;
+        }
+        :hover{
+            text-shadow: 5px 5px #D96F32;
+        }
+    }
+    
+    nav{
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        font-size: 25px;
+        .link{
+            text-decoration: none;
+            color: rgb(242, 205, 160);
+        }
+    }
+    .charge-bar{
+        height: 4px;
+        background-color: rgb(242, 205, 160);
+        width:55%;
+        border-radius: 10px;
+        animation: name duration timing-function delay iteration-count direction fill-mode;;
+    }
+}

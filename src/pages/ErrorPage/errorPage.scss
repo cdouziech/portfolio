@@ -1,0 +1,21 @@
+.Error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 200px;
+        margin-bottom: 50px;
+        margin-top: 0px;
+        text-shadow:
+            5px 0 #D96F32,
+            -5px 0 #D96F32,
+            0 5px #D96F32,
+            0 -5px #D96F32,
+            5px 5px #D96F32,
+            -5px -5px #D96F32,
+            5px -5px #D96F32,
+            -5px 5px #D96F32;
+    }
+}
