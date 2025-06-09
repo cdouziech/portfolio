@@ -1,0 +1,5 @@
+@mixin orange-hover {
+    &:hover{
+        text-shadow: 5px 5px #D96F32;
+    }
+}
