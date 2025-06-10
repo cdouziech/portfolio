@@ -1,19 +1,19 @@
-import './landing.scss'
+import './landing.scss';
+import { useNavigate} from "react-router";
+import Caroussel from '../../components/carrousel/crsl';
+import img1 from '../../imgs/unknown.png';
+import img2 from '../../imgs/CV4-1.png';
+const imgs = [img1, img2];
 
 function LandingPage(langIsEnglish){
+    const navigate = useNavigate();
     return(
         <div className='Landing'>
             <img className='portrait' src="https://sb.ecobnb.net/app/uploads/sites/7/2023/11/Place-de-la-Bourse-1170x490-1.jpg" alt="portrait of me" />
-            <div className='ladingRedirect'>
-                <div className='projects'>
-                    <p>Voir mes projets</p>
-                </div>
-                <div className='cv'>
-                    <p>Voir mon CV</p>
-                </div>
-                <div className='who'>
-                    <p>Qui suis-je ?</p>
-                </div>
+            <div className='landingCrsl'>
+                <Caroussel
+                imgsPath = {imgs}
+                ></Caroussel>
             </div>
         </div>
     )

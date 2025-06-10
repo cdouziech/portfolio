@@ -15,12 +15,6 @@ body{
     align-items: center;
 }
 
-@mixin orange-hover {
-    :hover{
-        text-shadow: 5px 5px #D96F32;
-    }
-}
-
 @font-face {
   font-family: 'Blisey';
   src: url('/font/Blisey.otf') format('opentype');

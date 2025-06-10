@@ -15,44 +15,8 @@
         background-size:contain;
         background-position: center;
     }
-    .ladingRedirect{
-        display: flex;
-        flex-direction: column;
+    .landingCrsl{
+        width: 30%;
         height: 100%;
-        width: 40%;
-        justify-content: space-between;
-        :hover{
-            cursor: pointer;
-        }
-        .projects{
-            height: 40%;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            background-image: url('');
-            background-repeat: no-repeat;
-            background-size:contain;
-            background-position: center;
-            @include orange-hover;
-            background-color: aqua;
-            p{
-                margin-left: 30px;
-                font-size: 42px;
-            }
-        }
-        .cv{
-            height: 40%;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            background-image: url('');
-            background-repeat: no-repeat;
-            background-size:contain;
-            background-position: center;
-            p{
-                margin-left: 30px;
-                font-size: 42px;
-            }
-        }
     }
 }

@@ -1,6 +1,6 @@
 // IMPORTS
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from "react-router-dom"; // ✅ Fixed import
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './main.scss';
 
 // PAGES
