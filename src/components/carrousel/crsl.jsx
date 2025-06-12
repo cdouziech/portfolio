@@ -4,12 +4,15 @@ import { useState } from "react";
 import arrow_right from '../../assets/arrow-right.svg';
 import arrow_left from '../../assets/arrow-left.svg';
 
-function Carrousel({imgsPath}){
+function Carrousel({imgsPath, titles, onClicks}){
     let [activeIndex,ChangeIndex]= useState(0);
     const maxIndex = 2;
 
     return (
-    <div className="carrousel">
+    <div className="carrousel" >
+        <h2 onClick={onClicks[activeIndex]}>
+            {titles[activeIndex]}
+        </h2>
         <img src={imgsPath[activeIndex]} alt="photo de présentation du logement" className="banner" />
             <div className="arrowsContainer">
                 <img 
@@ -32,7 +35,9 @@ function Carrousel({imgsPath}){
     )
 }
 Carrousel.propTypes = {
-    imgsPath: PropTypes.string.isRequired
+    imgsPath: PropTypes.string.isRequired,
+    title : PropTypes.string.isRequired,
+    onClick: PropTypes.func
 }
 
 export default Carrousel;

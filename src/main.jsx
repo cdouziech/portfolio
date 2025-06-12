@@ -7,7 +7,9 @@ import './main.scss';
 import Landing from './pages/landing/Landing.jsx';
 import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
 import ProjectsPage from './pages/projectsPage/ProjectsPage.jsx';
-import cvPage from './pages/cvPage/cvPage.jsx';
+import SkillsPage from './pages/skillsPage/SkillsPage.jsx';
+import ProjectPage from './pages/projectPage/projectPage.jsx';
+import About from './pages/About/About.jsx'
 
 // COMPONENTS
 import Footer from './components/footer/Footer.jsx';
@@ -20,9 +22,13 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<Landing />}/>
         <Route path="/projects" element={<ProjectsPage />}/>
-        <Route path="/cv" element={<cvPage />}/>
+        <Route path="/projects/:id" element={<ProjectPage />}/>
+        <Route path="/skills" element={<SkillsPage />}/>
+        <Route path="/about" element={<About />}/>
         <Route path="/*" element={<ErrorPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
 );
+// compténces plutot que cv
+// rubrique contact 

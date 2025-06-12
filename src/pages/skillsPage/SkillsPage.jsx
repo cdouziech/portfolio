@@ -1,4 +1,4 @@
-import './cvPage.scss'
+import './skillsPage.scss'
 
 function CvPage(){
     return(

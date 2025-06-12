@@ -4,7 +4,7 @@ import UKFlag from '../../assets/united-kingdom-flag.svg'
 function Footer(){
     return(
         <div className='footer'>
-            <div class="barber-bar">
+            <div className="barber-bar">
                 coucou
             </div>
             <div className='flags'>
