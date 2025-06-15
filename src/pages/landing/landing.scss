@@ -8,41 +8,30 @@
     align-items: center;
     gap: 3%;
     .qui{
-        width: 60%;
-        height: 100%;
+        width: 90%;
+        height: 90%;
         display: flex;
         align-items: center;
-        flex-direction: column;
+        justify-content: center;
         border: 4px solid #BF6F41;
-        border-radius: 50px;
+        border-radius: 5000000px;
         background-color:#F2CDA0 ;
+        gap: 50px;
         color: #403324;
-        .bar{
-            width: 100%;
-            height: 4px;
-            background-color: #BF6F41;
+        .portrait{
+            height: 90%;
+            width: auto;
+            border-radius: 1000px;
         }
-        div{
+        aside{
+            width: 45%;
+            font-size: 30px;
             display: flex;
-            align-items: center;
-            width: 100%;
-            gap: 5%;
-            .portrait{
-                height: 100%;
-                width: 45%;
-            }
-            aside{
-                width: 45%;
-                font-size: 30px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-
+            flex-direction: column;
+            justify-content: center;
+            p{
+                margin: 0;
             }
         }
-    }
-    .landingCrsl{
-        width: 30%;
-        height: 100%;
     }
 }

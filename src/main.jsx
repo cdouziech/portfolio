@@ -9,7 +9,7 @@ import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
 import ProjectsPage from './pages/projectsPage/ProjectsPage.jsx';
 import SkillsPage from './pages/skillsPage/SkillsPage.jsx';
 import ProjectPage from './pages/projectPage/projectPage.jsx';
-import About from './pages/About/About.jsx'
+import Contact from './pages/Contact/Contact.jsx'
 
 // COMPONENTS
 import Footer from './components/footer/Footer.jsx';
@@ -24,7 +24,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/projects" element={<ProjectsPage />}/>
         <Route path="/projects/:id" element={<ProjectPage />}/>
         <Route path="/skills" element={<SkillsPage />}/>
-        <Route path="/about" element={<About />}/>
+        <Route path="/contact" element={<Contact />}/>
         <Route path="/*" element={<ErrorPage />} />
       </Routes>
       <Footer />
