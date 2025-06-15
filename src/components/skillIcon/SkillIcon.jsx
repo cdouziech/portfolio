@@ -1,9 +1,9 @@
-import './skillIcon.scss'
+import './skillIcon.scss';
 
-function SkillIcon(img_path, alt){
-    return(
-        <img src={img_path} alt={alt} />
-    )
+function SkillIcon({ src, alt, onClick }) {
+    return (
+        <img src={src} alt={alt} onClick={onClick} />
+    );
 }
 
 export default SkillIcon;

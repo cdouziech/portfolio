@@ -1,0 +1,57 @@
+@import '../../mixins.scss';
+
+.card{
+    width: 47%;
+    height: 40%;
+    background-color: #F2CDA0;
+    border-radius: 100px;
+    display: flex;
+    border: 3px solid #D96F32;
+    overflow: hidden;
+    color : #403324;
+    :hover:first-child{
+        opacity: 1;
+    }
+    .card-banner{
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45%;         
+        height: 100%;        
+        :hover:first-child{
+            width:100%;
+        }
+        img{
+            width: 150%;  
+            height: auto;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+    }
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 55%;
+        .icons-container{
+            width: fit-content;
+            display: flex;
+            gap: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #403324;
+        }
+        p{
+            height: 60%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 34px;
+            margin: 0;
+            @include orange-hover(3px);
+        }
+    }
+}

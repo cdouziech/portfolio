@@ -1,3 +1,5 @@
+@import '../../mixins.scss';
+
 .header { 
     height: 15%;
     width: 100%;
@@ -18,10 +20,7 @@
         margin: 0;
         width: 200px;
         }
-        :hover{
-            text-shadow: 5px 5px #D96F32;
-            cursor: pointer;
-        }
+        @include orange-hover(5px);
     }
     
     nav{
@@ -31,12 +30,11 @@
         justify-content: center;
         gap: 20px;
         font-size: 25px;
-        :hover{
-            text-shadow: 3px 3px #D96F32;
-        }
+        
         .link{
             text-decoration: none;
             color: rgb(242, 205, 160);
+            @include orange-hover(3px);
         }
     }
     .charge-bar{

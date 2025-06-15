@@ -1,5 +1,6 @@
-@mixin orange-hover {
+@mixin orange-hover($px) {
     &:hover{
-        text-shadow: 5px 5px #D96F32;
+        text-shadow: $px $px #D96F32;
+        cursor: pointer;
     }
 }

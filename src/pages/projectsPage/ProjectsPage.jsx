@@ -1,9 +1,13 @@
 import './projectsPage.scss'
+import ProjectCard from '../../components/projectCard/projectCard';
 
 function ProjectsPage(){
     return(
         <div className='projectsContainer'>
-            <h1>Page projets</h1>
+            <ProjectCard></ProjectCard>
+            <ProjectCard></ProjectCard>
+            <ProjectCard></ProjectCard>
+            <ProjectCard></ProjectCard>
         </div>
     )
 }
