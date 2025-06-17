@@ -33,17 +33,17 @@ function LandingPage(langIsEnglish){
                             <SkillIcon
                                 src={linkedinSVG}
                                 alt="linkedin icon"
-                                onClick={() => window.location = "https://exampleURL.com/"}
+                                onClick={() => window.open('https://www.linkedin.com/in/clotaire-douziech-a34553277/', '_blank')}
                             />
                             <SkillIcon
                                 src={githubSVG}
                                 alt="github icon"
-                                onClick={() => window.location = "https://exampleURL.com/"}
+                                onClick={() => window.open('https://github.com/cdouziech', '_blank')}
                             />
                             <SkillIcon
                                 src={xSVG}
                                 alt="x icon"
-                                onClick={() => window.open('https://exemple.com', '_blank')}
+                                onClick={() => window.open('https://x.com/clotairedouz', '_blank')}
                             />
                         </div>  
                     </aside>

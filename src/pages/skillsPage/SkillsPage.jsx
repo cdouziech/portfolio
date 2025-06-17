@@ -1,14 +1,19 @@
 import './skillsPage.scss';
-import SkillsTable from '../../components/SkilssTable/SkillsTable.jsx';
+import SkillsTable from '../../components/skillsTable/SkillsTable.jsx';
+import ProjectCard from '../../components/projectCard/projectCard.jsx';
 
 function SkillsPage(){
     return(
         <div className='skills-page'>
             <div className='go-tos'>
-                <div className='CV'></div>
-                <div className='projects'></div>
+                <a  className='CV' href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+                    Voir mon CV
+                </a>
+                <div className='projects'>
+                    Voir mes projets
+                </div>
             </div>
-            <div className='skills-table'>
+            <div className='skills-table-container'>
                 <SkillsTable></SkillsTable>
             </div>
         </div>

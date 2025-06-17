@@ -1,0 +1,27 @@
+.skills-table{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    scrollbar-color: #F2CDA0  #403324; 
+    gap: 10px;
+    .skill-card{
+        img{
+            width: 70px;
+            height: 70px;
+            margin: 0;
+        }
+        
+        width:48%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #F2CDA0;
+        border-radius: 20px;
+        border: solid 2px #BF6F41;
+        color:#403324 ;
+    }
+}

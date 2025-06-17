@@ -32,7 +32,7 @@ function Contact(){
                         <button type="submit" class="btn btn-lg btn-dark btn-block">Envoyer !</button>
                     </form>
                 </div>
-                <p>Merci de votre message, je répondrai dans les 24H !</p>
+                <p>Je répondrai dans les 24H !</p>
             </div>
         </div>
     )
