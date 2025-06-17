@@ -36,6 +36,14 @@
             color: rgb(242, 205, 160);
             @include orange-hover(3px);
         }
+        .link.active{
+            color: #D96F32;
+            
+        }
+        .link.active:hover{
+            cursor:default;
+            text-shadow: none
+        };
     }
     .charge-bar{
         height: 4px;

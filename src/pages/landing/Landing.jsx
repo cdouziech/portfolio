@@ -7,7 +7,11 @@ const imgs = [img1, img2];
 const titles = ['Voir mes projets', 'Voir mon CV'];
 import portrait_path from '../../imgs/portrait.jpg';
 import SkillIcon from '../../components/skillIcon/SkillIcon'; 
-import linkedinSVG from '../../assets/linkedin.svg'
+
+import linkedinSVG from '../../assets/linkedin.svg';
+import githubSVG from '../../assets/github.svg';
+import xSVG from '../../assets/x.svg';
+
 function LandingPage(langIsEnglish){
     const navigate = useNavigate();
 
@@ -21,13 +25,25 @@ function LandingPage(langIsEnglish){
             <div className='qui'>
                     <img className='portrait' src={portrait_path} alt="portrait of me" />
                     <aside>
-                        <p>Bienvenue sur mon site ! <br></br> Je suis Clotaire Douziech, j'ai 20 ans et je suis développeur web</p>
+                        <h1>Bienvenue sur mon site !</h1>
+                        <p>Je suis Clotaire Douziech, j'ai 20 ans et je suis développeur web.</p>
+                        <p>Je suis à la recrche d'une alternance aux alentours de bordeaux pour l'année scolaire 2025/2026 avec l'école Nexa. Trois semaines en entreprise pour une semaine en cours.</p>
                         <h2>Mes réseaux</h2>
                         <div className='networks-container'>
                             <SkillIcon
                                 src={linkedinSVG}
                                 alt="linkedin icon"
                                 onClick={() => window.location = "https://exampleURL.com/"}
+                            />
+                            <SkillIcon
+                                src={githubSVG}
+                                alt="github icon"
+                                onClick={() => window.location = "https://exampleURL.com/"}
+                            />
+                            <SkillIcon
+                                src={xSVG}
+                                alt="x icon"
+                                onClick={() => window.open('https://exemple.com', '_blank')}
                             />
                         </div>  
                     </aside>

@@ -10,10 +10,75 @@
         margin: 0;
     }
     .links-container{
+        color : #403324;
         height: 80%;
         width: 90%;
         background-color: #F2CDA0;
         border-radius: 5000px;
         border: 3px solid #D96F32;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .icons-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
+                font-size: 20px;
+            }
+            p:first-of-type{
+                margin-right: 200px;
+            }
+        }
+        .form-container{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+                width: 70%;
+                margin-bottom: 30px;
+                margin-top: 30px;
+                button{
+                    background-color: #403324;
+                    color: #F2CDA0;
+                    border-radius: 10px;
+                    font-size: 20px;
+                }
+                .form-group{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    .form-row{
+                        display: flex;
+                        width: 100%;
+                        .col{
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            input{
+                                font-size: 20px;
+                                width: 80%;
+                                background-color: #F2CDA0;
+                                border: 2px solid #403324;
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                    textarea{
+                        width: 90%;
+                        background-color: #F2CDA0;
+                        border: 2px solid #403324;
+                        border-radius: 10px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
     }
 }
