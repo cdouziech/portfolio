@@ -6,7 +6,7 @@ import './main.scss';
 // PAGES
 import Landing from './pages/landing/Landing.jsx';
 import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
-import ProjectsPage from './pages/projectsPage/ProjectsPage.jsx';
+import ProjectsPage from './pages/projectsPage/projectsPage.jsx';
 import SkillsPage from './pages/skillsPage/SkillsPage.jsx';
 import ProjectPage from './pages/projectPage/projectPage.jsx';
 import Contact from './pages/Contact/Contact.jsx'
