@@ -30,5 +30,9 @@ createRoot(document.getElementById('root')).render(
       <Footer />
     </BrowserRouter>
 );
-// compténces plutot que cv
-// rubrique contact 
+
+
+// Page compétences à revoir
+// Page projet à faire
+// mailer pour contact
+// déployer le site 
