@@ -13,23 +13,23 @@ function Contact(){
                     <img src={mailIcon} alt="mail icon" />
                     <p>clotairedouziech@gmail.com</p>
                 </div>
-                <div class="form-container">
+                <div className="form-container">
                     <h1>Envoyez moi un message !</h1>
                     <form target="_blank" action="https://formsubmit.co/clotairedouziech@gmail.com" method="POST">
-                        <div class="form-group">
-                            <div class="form-row">
-                                <div class="col">
-                                    <input type="text" name="name" class="form-control" placeholder="Votre nom et/ou nom de  l'entreprise" required/>
+                        <div className="form-group">
+                            <div className="form-row">
+                                <div className="col">
+                                    <input type="text" name="name" className="form-control" placeholder="Votre nom et/ou nom de  l'entreprise" required/>
                                 </div>
-                                <div class="col">
-                                    <input type="email" name="mail" class="form-control" placeholder="Votre adresse email" required/>
+                                <div className="col">
+                                    <input type="email" name="mail" className="form-control" placeholder="Votre adresse email" required/>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <textarea placeholder="Votre message" class="form-control" name="message" rows="10" required></textarea>
+                        <div className="form-group">
+                            <textarea placeholder="Votre message" className="form-control" name="message" rows="10" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-lg btn-dark btn-block">Envoyer !</button>
+                        <button type="submit" className="btn btn-lg btn-dark btn-block">Envoyer !</button>
                     </form>
                 </div>
                 <p>Je répondrai dans les 24H !</p>

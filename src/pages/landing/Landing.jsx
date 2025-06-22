@@ -1,6 +1,5 @@
 import './landing.scss';
 import { useNavigate} from "react-router";
-import Caroussel from '../../components/carrousel/crsl';
 import img1 from '../../imgs/booki.png';
 import img2 from '../../imgs/CV4.png';
 const imgs = [img1, img2];
