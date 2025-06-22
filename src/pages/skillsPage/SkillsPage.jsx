@@ -1,6 +1,5 @@
 import './skillsPage.scss';
 import SkillsTable from '../../components/skillsTable/SkillsTable.jsx';
-import ProjectCard from '../../components/projectCard/projectCard.jsx';
 
 function SkillsPage(){
     return(
