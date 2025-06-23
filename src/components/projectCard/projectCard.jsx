@@ -1,27 +1,16 @@
 import './projectCard.scss';
 import SkillIcon from '../skillIcon/SkillIcon.jsx';
 import linkedinSVG from '../../assets/linkedin.svg';
-import booki from '../../imgs/booki.png';
+import booki from '../../imgs/banners/booki.png';
 
-function ProjectCard(){
-    return(
-        <div className='card'>
+function ProjectCard({ project, onClick }) {
+    return (
+        <div className="card" onClick={onClick}>*
             <div className='card-banner'>
-                <img src={booki} alt="project preview" />
+                <img src={project.image} alt={project.title} />
             </div>
             <div className='card-content'>
-                <div className='icons-container'>
-                    <SkillIcon
-                        src={linkedinSVG}
-                        alt="linkedin icon"
-                        onClick={() => window.location = "https://exampleURL.com/"}
-                    />
-                    <SkillIcon
-                        src={linkedinSVG}
-                        alt="linkedin icon"
-                        onClick={() => window.location = "https://exampleURL.com/"}
-                    />
-                </div>
+                <h1>{project.title}</h1>
                 <p>Voir les détails</p>
             </div>
         </div>

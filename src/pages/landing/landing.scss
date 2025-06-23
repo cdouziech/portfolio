@@ -40,6 +40,15 @@
             p:first-of-type{
                 margin-bottom: 20px;
             }
+            a{
+                text-decoration: none;
+                margin-left: 400px;
+                color: #403324;
+                &:hover{
+                    cursor: pointer;
+                    text-shadow: 3px 3px #D96F32;
+                }
+            }
             .networks-container{
                 display: flex;
                 gap: 30px;

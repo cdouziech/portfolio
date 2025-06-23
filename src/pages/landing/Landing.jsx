@@ -1,9 +1,5 @@
 import './landing.scss';
-import { useNavigate} from "react-router";
-import img1 from '../../imgs/booki.png';
-import img2 from '../../imgs/CV4.png';
-const imgs = [img1, img2];
-const titles = ['Voir mes projets', 'Voir mon CV'];
+
 import portrait_path from '../../imgs/portrait.jpg';
 import SkillIcon from '../../components/skillIcon/SkillIcon'; 
 
@@ -11,14 +7,7 @@ import linkedinSVG from '../../assets/linkedin.svg';
 import githubSVG from '../../assets/github.svg';
 import xSVG from '../../assets/x.svg';
 
-function LandingPage(langIsEnglish){
-    const navigate = useNavigate();
-
-    const onClicks = [
-        () => navigate('/projects/'), 
-        () => navigate('/cv/')
-    ];
-
+function LandingPage(){
     return(
         <div className='Landing'>
             <div className='qui'>
@@ -44,6 +33,9 @@ function LandingPage(langIsEnglish){
                                 alt="x icon"
                                 onClick={() => window.open('https://x.com/clotairedouz', '_blank')}
                             />
+                            <a  className='CV' href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+                                Voir mon CV
+                            </a>
                         </div>  
                     </aside>
             </div>

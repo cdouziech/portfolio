@@ -8,7 +8,6 @@ import Landing from './pages/landing/Landing.jsx';
 import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
 import ProjectsPage from './pages/projectsPage/projectsPage.jsx';
 import SkillsPage from './pages/skillsPage/SkillsPage.jsx';
-import ProjectPage from './pages/projectPage/projectPage.jsx';
 import Contact from './pages/Contact/Contact.jsx'
 
 // COMPONENTS
@@ -22,7 +21,6 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<Landing />}/>
         <Route path="/projects" element={<ProjectsPage />}/>
-        <Route path="/projects/:id" element={<ProjectPage />}/>
         <Route path="/skills" element={<SkillsPage />}/>
         <Route path="/contact" element={<Contact />}/>
         <Route path="/*" element={<ErrorPage />} />

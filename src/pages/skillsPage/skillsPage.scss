@@ -2,31 +2,39 @@
     width: 90%;
     height: 80%;
     display: flex;
+    flex-direction: column;
     gap: 20px;
-    .skills-table-container{
-        width: 65%;
-    }
-    .go-tos{
-        height: 100%;
-        width: 30%;
+    .technologies-container, .skills-container{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        .CV, .projects{
-            width: 90%;
-            height: 45%;
-            text-align: center;
-            align-content: center;
-            border-radius: 2000px;
-            font-size: 30px;
-            text-decoration: none;
-            margin: 0;
-            border: 2px solid #BF6F41;
-            background-color: #F2CDA0;
-            color:#403324 ;
-            &:hover{
-                text-shadow: 2px 2px #D96F32;
+        width: 100%;
+        height: 100%;
+        .box-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 100%;
+            height: 100%;
+            .box{
+                h3{
+                    margin: 0;
+                }
+                img{
+                    height: 50px;
+                }
+                overflow: hidden;
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 10%;
+                background-color:#F2CDA0;
+                border-radius: 20px;
+                border: 2px solid #BF6F41;
+                color: #403324;
+                &:last-child{
+                    padding: 0 5px 0 5px;
+                }
             }
         }
     }
