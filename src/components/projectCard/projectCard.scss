@@ -37,6 +37,15 @@
         justify-content: flex-end;
         align-items: center;
         width: 55%;
+        h1{
+            color:#D96F32;
+            font-size: 40px;
+            text-align: center;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .icons-container{
             width: fit-content;
             display: flex;

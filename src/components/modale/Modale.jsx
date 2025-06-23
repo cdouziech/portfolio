@@ -1,12 +1,19 @@
 import './modale.scss';
-function Modale({ project, onClose }) {
+function Modale({ project, onClose, logos}) {
     return (
         <div className="shadow" onClick={onClose}>
             <div className="modale" onClick={(e) => e.stopPropagation()}>
                 <button className="close-btn" onClick={onClose}>Fermer</button>
-                <h2>{project.title}</h2>
-                <img src={project.image} alt={project.title} />
-                <p>{project.description}</p>
+                <div className='modale-content'>
+                    <img src={project.image} alt={project.title} />
+                    <div className='modale-text-and-icons'>
+                        <h1>{project.title}</h1>
+                        <p>{project.description}</p>
+                        {logos.map((logo)=>
+                            <img key={logo.id} src={logo.src} alt={logo.alt}/>
+                        )}
+                    </div>
+                </div>
             </div>
         </div>
     );

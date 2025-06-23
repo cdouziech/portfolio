@@ -98,6 +98,12 @@ const technologies = {
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png",
     alt: "github icon"
   },
+  sass: {
+    id: 17,
+    titre: "Sass",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png",
+    alt: "Sass icon"
+  },
 };
 
 
@@ -121,7 +127,7 @@ const skills = {
   },
   api: {
     id: 5,
-    titre: "Créer et utiliser une API",
+    titre: "Implémenter des API",
   },
   nosql: {
     id: 6,
@@ -140,8 +146,12 @@ const skills = {
     titre: "Versionning",
   },
   deploy: {
-    id: 8,
+    id: 10,
     titre: "Déployer un site en ligne",
+  },
+  crud: {
+    id: 11,
+    titre: "Opérations CRUD",
   },
 
 };
