@@ -12,6 +12,9 @@
     @media screen and (max-width: 800px) {
         max-height: 250px;
     }
+    @media screen and (max-width: 475px) {
+        max-height: 150px;
+    }
     :hover:first-child{
         opacity: 1;
     }
@@ -49,6 +52,9 @@
             align-items: center;
             @media screen and (max-width: 800px) {
                 font-size: 23px;
+            }
+            @media screen and (max-width: 475px) {
+                font-size: 15px;
             }
         }
         .icons-container{

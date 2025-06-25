@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: scroll;
     .modale{
         display: flex;
         flex-direction: column;
@@ -20,12 +21,33 @@
         border-radius: 50px;
         border: 2px solid #BF6F41 ;
         padding: 0 20px 0 20px;
+        @media screen and (max-width: 1000px) {
+            height: fit-content;
+        }
+        @media screen and (max-width: 800px) {
+            margin-top: 500px;
+        }
         .modale-content{
             display: flex;
             justify-content: center;
             height: 80%;
             gap: 30px;
             color:#403324 ;
+            @media screen and (max-width: 1000px) {
+                flex-direction: column;
+                height: fit-content;
+                padding-bottom: 30px;
+            }
+            img:first-of-type{
+                max-width: 500px;
+                object-fit: contain;
+                @media screen and (max-width: 800px) {
+                    align-self: center;
+                }
+                @media screen and (max-width: 675px) {
+                    max-width: 80vw;
+                }
+            }
             .modale-text-and-icons{
                 display: flex;
                 flex-direction: column;
@@ -36,12 +58,22 @@
                 h1{
                     font-size: 70px;
                     margin: 0;
+                    @media screen and (max-width: 1000px) {
+                        font-size: 50px;
+                    }
                 }
                 p{
                     font-size: 20px;
                 }
                 img{
                     width: 50px;
+                }
+                .icons{
+                    display: flex;
+                    gap: 20px;
+                    @media screen and (max-width: 500px) {
+                        flex-wrap: wrap;
+                    }
                 }
             }
         }
@@ -55,6 +87,9 @@
             border: 2px solid #403324;
             border-radius: 50px;
             font-size: 25px;
+            @media screen and (max-width: 700px) {
+                width: fit-content;
+            }
         }
     }
 }

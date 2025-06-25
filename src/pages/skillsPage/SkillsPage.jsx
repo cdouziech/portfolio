@@ -24,7 +24,7 @@ const technologies = {
     id: 4,
     titre: "HTML",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-    alt: "HTML icon"
+    alt: "HTML icon"    
   },
   css: {
     id: 5,

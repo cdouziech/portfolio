@@ -1,5 +1,15 @@
 import './modale.scss';
-function Modale({ project, onClose, logos}) {
+import { useEffect } from "react";
+function Modale({ project, onClose, logos, github}) {
+    useEffect(() => {
+        // Désactive le scroll du body quand la modale s'ouvre
+        document.body.style.overflow = 'hidden';
+        
+        // Réactive le scroll du body quand la modale se ferme
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, []);
     return (
         <div className="shadow" onClick={onClose}>
             <div className="modale" onClick={(e) => e.stopPropagation()}>
@@ -9,9 +19,12 @@ function Modale({ project, onClose, logos}) {
                     <div className='modale-text-and-icons'>
                         <h1>{project.title}</h1>
                         <p>{project.description}</p>
-                        {logos.map((logo)=>
-                            <img key={logo.id} src={logo.src} alt={logo.alt}/>
-                        )}
+                        <a href={github}>Voir sur GitHub</a>
+                        <div className='icons'>
+                            {logos.map((logo)=>
+                                <img key={logo.index} src={logo.src} alt={logo.alt}/>
+                            )}
+                        </div>
                     </div>
                 </div>
             </div>
