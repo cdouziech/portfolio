@@ -2,11 +2,16 @@
 
 .header { 
     height: 15%;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     line-height: 40px;
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        margin-top: 20px;
+        height: fit-content;
+    }
     .name{
         width: 20%;
         height: 100%;
@@ -24,13 +29,18 @@
     }
     
     nav{
-        width: 40%;
+        width: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 20px;
         font-size: 25px;
-        
+        @media screen and (max-width: 800px) {
+            width: 90%;
+        }
+        @media screen and (max-width: 400px) {
+            flex-direction: column;
+        }
         .link{
             text-decoration: none;
             color: rgb(242, 205, 160);
@@ -44,15 +54,24 @@
             cursor:default;
             text-shadow: none
         };
+        :last-child{
+            width: 180px;
+            min-width: 180px;
+        }
     }
     .charge-bar{
         height: 4px;
         background-color: rgb(242, 205, 160);
-        width:40%;
+        width:20%;
         border-radius: 10px;
         animation: name duration timing-function delay iteration-count direction fill-mode;;
         text-align: center;
         font-size: 24px;
+        @media screen and (max-width: 800px) {
+            width: 80%;
+            min-height: 3px;
+            margin: 20px;
+        }
     }
 }
 

@@ -6,12 +6,18 @@ body{
     background-color: #403324;
     color :#F2CDA0;
     font-family: 'Blisey', sans-serif;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 800px) {
+      padding-bottom: 20px;
+      height: fit-content;
+    }
 }
 #root {
+  width: 1200px;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 

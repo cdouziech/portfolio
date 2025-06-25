@@ -8,9 +8,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 1100px) {
+        flex-direction: column;
+        height: fit-content;
+        margin-top: 30px;
+        overflow:visible;
+    }
     .qui{
         width: 90%;
-        height: 90%;
+        height: 80%;
         display: flex;
         align-items: center;
         border: 4px solid #BF6F41;
@@ -18,18 +24,41 @@
         background-color:#F2CDA0 ;
         gap: 50px;
         color: #403324;
+        @media screen and (max-width: 1100px) {
+            flex-direction: column;
+            height: fit-content;
+            padding: 0 40px 70px 40px;
+            width: 70%;
+            margin-top: 30px;
+        }
+        @media screen and (max-width: 800px) {
+            border-radius: 0;
+            border: none;
+            width: 100%;
+            padding: 0 0 40px 0;
+        }
         .portrait{
-            height: 90%;
+            height: 400px;
             width: auto;
-            border-radius: 1000px;
+            border-radius: 100000000px;
             margin-left: 40px;
+            @media screen and (max-width: 1100px) {
+                margin: 20px 0 0 0;
+            }
+            @media screen and (max-width: 600px) {
+                height: 300px;
+            }
         }
         aside{
             width: 55%;
-            font-size: 30px;
+            max-width: 450px;
+            font-size: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            @media screen and (max-width: 800px) {
+                width: 100%
+            }
             h1{
                 margin-left: 0;
                 margin-top: 0;
@@ -39,15 +68,24 @@
             }
             p:first-of-type{
                 margin-bottom: 20px;
+                width: 80%;
             }
             a{
                 text-decoration: none;
-                margin-left: 400px;
                 color: #403324;
+                margin-top: 20px;
+                font-weight: bold;
+                font-size: 25px;
                 &:hover{
                     cursor: pointer;
                     text-shadow: 3px 3px #D96F32;
                 }
+                @media screen and (max-width: 800px) {
+                    text-align: center;
+                }
+            }
+            .coordonates{
+                margin-top: 20px;
             }
             .networks-container{
                 display: flex;

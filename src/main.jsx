@@ -25,12 +25,6 @@ createRoot(document.getElementById('root')).render(
         <Route path="/contact" element={<Contact />}/>
         <Route path="/*" element={<ErrorPage />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
 );
 
-
-// Page compétences à revoir
-// Page projet à faire
-// mailer pour contact
-// déployer le site 

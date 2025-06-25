@@ -64,7 +64,7 @@ const technologies = {
   },
   wave: {
     id: 11,
-    titre: "Extension WAVE",
+    titre: "WAVE",
     image: "https://img.crx4chrome.com/28/ce/ba/jbbplnpkjmmeebjpijfedlgcdilocofh-logo.webp",
     alt: "WAVE extension icon"
   },
@@ -167,7 +167,7 @@ function SkillsPage(){
                     {Object.values(technologies).map((tech)=> 
                         <div className='box' key={tech.id}>
                             <img src={tech.image} alt={tech.alt} />
-                            <h3>{tech.titre}</h3>
+                            <p>{tech.titre}</p>
                         </div>
                     )}
                 </div>
@@ -177,7 +177,7 @@ function SkillsPage(){
                 <div className='box-container'>
                     {Object.values(skills).map((skl)=> 
                         <div className='box' key={skl.id}>
-                            <h3>{skl.titre}</h3>
+                            <p>{skl.titre}</p>
                         </div>
                     )}
                 </div>

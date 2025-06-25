@@ -9,7 +9,9 @@
     border: 3px solid #D96F32;
     overflow: hidden;
     color : #403324;
-    
+    @media screen and (max-width: 800px) {
+        max-height: 250px;
+    }
     :hover:first-child{
         opacity: 1;
     }
@@ -39,12 +41,15 @@
         width: 55%;
         h1{
             color:#D96F32;
-            font-size: 40px;
+            font-size: 28px;
             text-align: center;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
+            @media screen and (max-width: 800px) {
+                font-size: 23px;
+            }
         }
         .icons-container{
             width: fit-content;
@@ -59,9 +64,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 34px;
+            font-size: 20px;
             margin: 0;
             @include orange-hover(3px);
+            @media screen and (max-width: 800px) {
+                font-size: 15px;
+            }
         }
     }
 }

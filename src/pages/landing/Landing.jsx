@@ -16,7 +16,7 @@ function LandingPage(){
                         <h1>Bienvenue sur mon site !</h1>
                         <p>Je suis Clotaire Douziech, j'ai 20 ans et je suis développeur web.</p>
                         <p>Je suis à la recrche d'une alternance aux alentours de bordeaux pour l'année scolaire 2025/2026 avec l'école Nexa. Trois semaines en entreprise pour une semaine en cours.</p>
-                        <h2>Mes réseaux</h2>
+                        <h2>Mes réseaux & coordonées</h2>
                         <div className='networks-container'>
                             <SkillIcon
                                 src={linkedinSVG}
@@ -33,10 +33,14 @@ function LandingPage(){
                                 alt="x icon"
                                 onClick={() => window.open('https://x.com/clotairedouz', '_blank')}
                             />
-                            <a  className='CV' href="/cv.pdf" target="_blank" rel="noopener noreferrer">
-                                Voir mon CV
-                            </a>
-                        </div>  
+                        </div>
+                        <div className='coordonates'>
+                            <p> <b>Mail</b> : clotairedouziech@gmail.com</p>
+                            <p> <b>Téléphone</b> : 07 60 04 80 57</p>
+                        </div>
+                        <a  className='CV' href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+                            Voir mon CV
+                        </a>
                     </aside>
             </div>
         </div>
