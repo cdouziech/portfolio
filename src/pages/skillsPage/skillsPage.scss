@@ -7,6 +7,9 @@
     @media screen and (max-width: 800px) {
         height: fit-content;
     }
+    @media screen and (max-width: 500px) {
+        width: 100%;
+    }
     .technologies-container, .skills-container{
         display: flex;
         flex-direction: column;

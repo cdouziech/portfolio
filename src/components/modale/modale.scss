@@ -8,7 +8,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: scroll;
+    @media screen and (max-width: 1000px) {
+        overflow: scroll;
+    }
     .modale{
         display: flex;
         flex-direction: column;
@@ -24,7 +26,7 @@
         @media screen and (max-width: 1000px) {
             height: fit-content;
         }
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 1000px) {
             margin-top: 500px;
         }
         .modale-content{
@@ -41,7 +43,7 @@
             img:first-of-type{
                 max-width: 500px;
                 object-fit: contain;
-                @media screen and (max-width: 800px) {
+                @media screen and (max-width: 1000px) {
                     align-self: center;
                 }
                 @media screen and (max-width: 675px) {
